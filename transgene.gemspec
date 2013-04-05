@@ -1,5 +1,8 @@
 #coding:utf-8
-require "lib/transgene/version"
+lib_dir = File.expand_path('../lib/', __FILE__)
+$LOAD_PATH.unshift lib_dir unless $LOAD_PATH.include?(lib_dir)
+
+require "transgene/version"
 
 Gem::Specification.new do |s|
   s.name = "transgene"
